@@ -59,6 +59,23 @@ Then ask for a UI task, or run `/secure-modern-frontend:secure-modern-frontend`.
   `modern-web-guidance@1.0.1`.
 - For the audit, a platform that can delegate to sub-agents.
 
+## Privacy
+
+The `modern-web-guidance` CLI sends anonymous usage telemetry to Google by
+default. For each `search` it sends the query text and the IDs of the results.
+For each `retrieve` it sends the guide ID. Every event also includes your OS,
+the CLI version, the agent that ran it, and how long it took. It does not send
+your code or file contents. See
+[upstream's telemetry notes](https://github.com/GoogleChrome/modern-web-guidance#-telemetry--privacy).
+
+To turn it off, set the environment variable `DISABLE_TELEMETRY=1` before you
+start Claude Code:
+
+- Windows: `setx DISABLE_TELEMETRY 1`, then restart your editor or terminal.
+- macOS and Linux: add `export DISABLE_TELEMETRY=1` to your shell profile.
+
+This plugin itself collects nothing.
+
 ## Decisions
 
 - **CLI pinned to `modern-web-guidance@1.0.1`.** `search`, `retrieve`, and
