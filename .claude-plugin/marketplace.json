@@ -1,0 +1,15 @@
+{
+  "name": "secure-modern-frontend",
+  "description": "Design, build, and review web UI with the least code that meets the quality bar.",
+  "owner": {
+    "name": "urmiljp",
+    "url": "https://github.com/urmiljp"
+  },
+  "plugins": [
+    {
+      "name": "secure-modern-frontend",
+      "source": "./",
+      "description": "One workflow that designs, builds, and reviews web UI with the least code that meets the quality bar."
+    }
+  ]
+}

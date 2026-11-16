@@ -1,0 +1,3 @@
+# Store every text file with LF endings, so vendored files stay byte-identical
+# to the upstream commits recorded in NOTICE, whatever the contributor's OS.
+* text=auto eol=lf

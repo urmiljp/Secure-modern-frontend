@@ -1,0 +1,59 @@
+secure-modern-frontend
+Copyright 2026 urmiljp
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This plugin bundles skills from three upstream projects. It is not affiliated
+with, sponsored by, or endorsed by Anthropic, Cloudflare, or Google.
+
+Original files in this repository (Apache-2.0):
+  .claude-plugin/plugin.json
+  .claude-plugin/marketplace.json
+  skills/minimal-code/SKILL.md
+  skills/secure-modern-frontend/SKILL.md
+  LICENSE, NOTICE, THIRD_PARTY_NOTICES.md, README.md, .gitignore,
+  .gitattributes
+
+-------------------------------------------------------------------------------
+1. frontend-design
+-------------------------------------------------------------------------------
+Source:   https://github.com/anthropics/skills (skills/frontend-design)
+Commit:   e4bb5d960d87126ff3b3a8af1a104b7db67560ba
+License:  Apache-2.0 (skills/frontend-design/LICENSE.txt)
+Path:     skills/frontend-design/
+Changes:  None. Both upstream files are byte-identical.
+
+-------------------------------------------------------------------------------
+2. modern-web-guidance
+-------------------------------------------------------------------------------
+Source:   https://github.com/GoogleChrome/modern-web-guidance
+          (skills/modern-web-guidance)
+Commit:   64a6d708f5a43f2cd3fde5d4d7db3905ba1bdf65
+License:  Apache-2.0 (skills/modern-web-guidance/LICENSE)
+Path:     skills/modern-web-guidance/
+Changes:
+  - skills/modern-web-guidance/SKILL.md (modified): every
+    "modern-web-guidance@latest" is replaced with "modern-web-guidance@1.0.1"
+    (4 lines), so the CLI version is pinned to one that was verified to work.
+    The frontmatter "description" is rewritten, because the upstream text
+    ("MANDATORY: Execute FIRST for all HTML/CSS ... tasks") triggered this
+    skill in place of the secure-modern-frontend workflow.
+    One HTML comment after the frontmatter records the changes, as Apache-2.0
+    section 4(b) requires. The rest of the file is unchanged.
+  - skills/modern-web-guidance/LICENSE: copied unmodified from the upstream
+    repository root so the license stays with the file.
+  - Not vendored: upstream guides/ (CC-BY 4.0 content) and the
+    chrome-extensions skill. The pinned CLI serves the guides at runtime.
+
+-------------------------------------------------------------------------------
+3. security-audit
+-------------------------------------------------------------------------------
+Source:   https://github.com/cloudflare/security-audit-skill
+          (skills/security-audit)
+Commit:   c1c8a8c1471069fb0e188eeaff69b8e8db6564a8
+License:  MIT, Copyright (c) 2025-2026 Cloudflare, Inc.
+          (skills/security-audit/LICENSE)
+Path:     skills/security-audit/
+Changes:  None. All 20 upstream skill files are byte-identical.
+          skills/security-audit/LICENSE is copied unmodified from the upstream
+          repository root so the license stays with the files.

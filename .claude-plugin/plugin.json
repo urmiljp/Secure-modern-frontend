@@ -1,0 +1,13 @@
+{
+  "name": "secure-modern-frontend",
+  "version": "0.1.0",
+  "description": "One workflow that designs, builds, and reviews web UI with the least code that meets the quality bar.",
+  "author": {
+    "name": "urmiljp",
+    "url": "https://github.com/urmiljp"
+  },
+  "homepage": "https://github.com/urmiljp/secure-modern-frontend",
+  "repository": "https://github.com/urmiljp/secure-modern-frontend",
+  "license": "Apache-2.0",
+  "keywords": ["frontend", "design", "web-platform", "security", "minimal-code"]
+}

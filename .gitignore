@@ -1,0 +1,18 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Dependencies and npm cache, if a tool creates them here
+node_modules/
+.npm/
+
+# Security audit output must never be committed. The skill writes outside
+# the repo by default; this catches a run pointed at this directory.
+security-audit-skill/
